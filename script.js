@@ -83,6 +83,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // div.appendChild(border);
 
         div.onclick = () => window.location.href = skill.link;
+        div.onclick = () => {
+            const anchor = document.createElement('a');
+            anchor.href = skill.link;
+            anchor.target = '_blank';
+            anchor.rel = 'noopener noreferrer';
+            anchor.click();
+        };
         div.onmouseover = () => highlightSkill(skill.id);
         div.onmouseout = () => clearHighlight();
         skillTree.appendChild(div);
