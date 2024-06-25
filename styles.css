@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.skill-tree {
+    display: grid;
+    row-gap: 5px;
+    align-items: start;
+    max-width: 800px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.skill {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    position: relative;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    padding: 20px;
+    margin-bottom: -40px; /* Half of height to overlap */
+    font-size: 0.9em;
+    background-image: url('border.svg');
+    background-size: auto;
+    background-repeat: no-repeat; 
+}
+
+.skill-offset {
+    margin-left: 120px;
+}
+
+.skill img {
+    max-width: 40px;
+    margin-bottom: 5px;
+}
+
+.skill:hover {
+    background-color: lightgreen;
+}
+
+.highlight-skill {
+    background-color: plum;
+}
+
+.highlight-prereq {
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Boards Skill Tree</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Filters:</h1>
+        <button onclick="filterSkills('all')">Show All</button>
+        <button onclick="filterSkills('mechanical')">Mechanical</button>
+        <button onclick="filterSkills('electrical')">Electrical</button>
+        <button onclick="filterSkills('software')">Software</button>
+    </header>
+    <main>
+        <div class="skill-tree" id="skillTree">
+        </div>
+    </main>
+    <footer>
+        <button onclick="highlightPath('mechanical')">Mechanical Path</button>
+        <button onclick="highlightPath('electrical')">Electrical Path</button>
+        <button onclick="highlightPath('software')">Software Path</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
