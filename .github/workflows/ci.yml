@@ -1,0 +1,19 @@
+name: Sleep for 5 minutes
+
+on:
+  pull_request:
+  merge_group:
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-slim
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Display info
+      run: | 
+        pwd
+        tree -a -I '.git'
+        git status
+    - name: Sleep for 30 seconds
+      run: sleep 30
